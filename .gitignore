@@ -26,3 +26,11 @@ replay_pid*
 .agents/
 default.conf
 docker-compose.yml
+
+# site 3D (Vite)
+node_modules/
+dist/
+.playwright-mcp/
+.serena/
+.claude/settings.local.json
+node_modules/.vite*
