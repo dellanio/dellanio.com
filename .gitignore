@@ -34,3 +34,7 @@ dist/
 .serena/
 .claude/settings.local.json
 node_modules/.vite*
+
+# material de trabalho (fontes do Blender, geracoes do Meshy): fora do git, arquivos grandes
+blender/
+meshy_output/
