@@ -642,6 +642,9 @@ canvas {
   font-family: 'Oxanium', sans-serif;
   color: #e8a91c;
 }
+.arcade-grid img.arcade-cover-modern {
+  image-rendering: auto;
+}
 .arcade-grid strong {
   font-size: 15px;
   line-height: 1.2;
@@ -705,6 +708,7 @@ canvas {
 }
 .arcade-search span { white-space: nowrap; font-size: 13px; opacity: 0.75; }
 .arcade-overlay button:focus-visible,
+.arcade-overlay a:focus-visible,
 .arcade-search input:focus-visible { outline: 2px solid #e8a91c; outline-offset: 3px; }
 .arcade-start {
   display: flex;
@@ -718,8 +722,9 @@ canvas {
 }
 .arcade-start img,
 .arcade-start .arcade-nocover { max-width: 65%; max-height: 60%; object-fit: contain; border-radius: 4px; }
-.arcade-start-btn { padding: 12px 32px; color: #1a1206; background: #e8a91c; font-weight: 700; }
+.arcade-start-btn { padding: 12px 32px; color: #1a1206; background: #e8a91c; font-weight: 700; text-decoration: none; text-align: center; }
 .arcade-start-btn:hover { background: #f8bf43; }
+.arcade-external-hint { margin: 0; max-width: 38ch; padding: 0 16px; text-align: center; font-size: 13px; opacity: 0.75; }
 .arcade-player-status { position: absolute; top: 12px; left: 16px; margin: 0; pointer-events: none; }
 .arcade-credit {
   margin: 0;

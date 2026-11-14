@@ -1,0 +1,72 @@
+[
+  {
+    "id": "roqueos-roquecraft",
+    "system": "roqueos",
+    "title": "RoqueCraft",
+    "cover": "/arcade/covers/roqueos/roquecraft.jpg",
+    "cover_source": "https://roqueos.com.br/games/covers/roquecraft.jpg",
+    "source_url": "https://roqueos.com.br/jogar/roquecraft",
+    "player_url": "https://roqueos.com.br/jogar/roquecraft",
+    "launch": "external"
+  },
+  {
+    "id": "roqueos-farol",
+    "system": "roqueos",
+    "title": "Roque Gear 3000",
+    "cover": "/arcade/covers/roqueos/farol.jpg",
+    "cover_source": "https://roqueos.com.br/games/covers/farol.jpg",
+    "source_url": "https://roqueos.com.br/jogar/farol",
+    "player_url": "https://roqueos.com.br/jogar/farol",
+    "launch": "external"
+  },
+  {
+    "id": "roqueos-prisma",
+    "system": "roqueos",
+    "title": "PRISMA",
+    "cover": "/arcade/covers/roqueos/prisma.jpg",
+    "cover_source": "https://roqueos.com.br/games/covers/prisma.jpg",
+    "source_url": "https://roqueos.com.br/jogar/prisma",
+    "player_url": "https://roqueos.com.br/jogar/prisma",
+    "launch": "external"
+  },
+  {
+    "id": "roqueos-tora",
+    "system": "roqueos",
+    "title": "TORA",
+    "cover": "/arcade/covers/roqueos/tora.jpg",
+    "cover_source": "https://roqueos.com.br/games/covers/tora.jpg",
+    "source_url": "https://roqueos.com.br/jogar/tora",
+    "player_url": "https://roqueos.com.br/jogar/tora",
+    "launch": "external"
+  },
+  {
+    "id": "roqueos-agentolandia",
+    "system": "roqueos",
+    "title": "Agentolandia",
+    "cover": "/arcade/covers/roqueos/agentolandia.jpg",
+    "cover_source": "https://roqueos.com.br/games/covers/agentolandia.jpg?v=3",
+    "source_url": "https://roqueos.com.br/jogos/agentolandia",
+    "player_url": "https://roqueos.com.br/jogar/agentolandia",
+    "launch": "external"
+  },
+  {
+    "id": "roqueos-xadrez",
+    "system": "roqueos",
+    "title": "Xadrez",
+    "cover": "/arcade/covers/roqueos/xadrez.jpg",
+    "cover_source": "https://roqueos.com.br/games/covers/chess.jpg",
+    "source_url": "https://roqueos.com.br/jogos/xadrez",
+    "player_url": "https://roqueos.com.br/jogar/xadrez",
+    "launch": "external"
+  },
+  {
+    "id": "roqueos-callofroque",
+    "system": "roqueos",
+    "title": "Call of Roque",
+    "cover": "/arcade/covers/roqueos/callofroque.jpg",
+    "cover_source": "https://callofroque.roqueos.com/og/callofroque.jpg?v=96189996e592",
+    "source_url": "https://callofroque.roqueos.com/",
+    "player_url": "https://callofroque.roqueos.com/",
+    "launch": "external"
+  }
+]

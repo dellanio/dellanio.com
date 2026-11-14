@@ -83,6 +83,16 @@ O script consulta a seção SNES mais jogados e o player de cada título selecio
 só substitui o catálogo quando todas as consultas são bem-sucedidas. A atualização é manual,
 sem chamadas ao catálogo externo durante o build ou a navegação do visitante.
 
+A aba **RoqueOS** usa `public/arcade/roqueos.json`, com sete jogos selecionados.
+As capas oficiais foram salvas em `public/arcade/covers/roqueos/`; o campo
+`cover_source` registra a URL de origem de cada imagem. Esse catálogo é separado
+para não ser sobrescrito pelo importador de SNES/PS1.
+
+Os jogos RoqueOS abrem em outra aba, mantendo a seleção e os botões de retorno
+no fliperama. Em 14/11/2026, as rotas `/jogar/` enviavam `X-Frame-Options: SAMEORIGIN`
+e `frame-ancestors` sem dellanio.com; Call of Roque também restringia os ancestrais
+ao próprio serviço e aos domínios RoqueOS. Não há proxy nem remoção desses cabeçalhos.
+
 ## Tecnologia
 
 | Camada | Escolha |

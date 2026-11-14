@@ -3,8 +3,12 @@ import { UI } from './content'
 import { useLang } from './i18n'
 import { getRadio, radioOff, radioOn } from './radio'
 
-// Embed only the selected OldGames player, keeping our own navigation.
-const SYSTEMS = [{ id: 'snes', label: 'SNES' }, { id: 'psx', label: 'PS1' }]
+// Keep our navigation for embedded players and games that require a new tab.
+const SYSTEMS = [{ id: 'snes', label: 'SNES' }, { id: 'psx', label: 'PS1' }, { id: 'roqueos', label: 'RoqueOS' }]
+const ROQUE_PATHS = ['roquecraft', 'farol', 'prisma', 'tora', 'agentolandia', 'xadrez']
+const isRoqueUrl = (url) => (url.origin === 'https://roqueos.com.br' &&
+  ROQUE_PATHS.some((slug) => ['/jogar/', '/jogos/'].some((prefix) => url.pathname === `${prefix}${slug}`))) ||
+  (url.origin === 'https://callofroque.roqueos.com' && url.pathname === '/')
 const PAGE = 24
 const searchText = (text) => text.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
 
@@ -13,6 +17,7 @@ function validGame(game) {
   try {
     const player = new URL(game.player_url)
     const source = new URL(game.source_url)
+    if (game.system === 'roqueos') return game.launch === 'external' && isRoqueUrl(player) && isRoqueUrl(source)
     return player.origin === 'https://oldgames.app' && player.pathname === '/emulator' &&
       source.origin === 'https://oldgames.app' && source.pathname.startsWith('/games/')
   } catch { return false }
@@ -21,11 +26,12 @@ function validGame(game) {
 function Cover({ game }) {
   const [failed, setFailed] = useState(false)
   return game.cover && !failed
-    ? <img src={game.cover} alt="" loading="lazy" onError={() => setFailed(true)} />
+    ? <img className={game.system === 'roqueos' ? 'arcade-cover-modern' : undefined} src={game.cover} alt="" loading="lazy" onError={() => setFailed(true)} />
     : <span className="arcade-nocover">{game.title}</span>
 }
 
 function Player({ game, ui }) {
+  const external = game.launch === 'external'
   const area = useRef()
   const [frameSize, setFrameSize] = useState({ width: '100%', height: '100%' })
   const [started, setStarted] = useState(false)
@@ -33,6 +39,7 @@ function Player({ game, ui }) {
   const [slow, setSlow] = useState(false)
   const [attempt, setAttempt] = useState(0)
   useLayoutEffect(() => {
+    if (external) return
     // OldGames uses a 4:3 screen plus a toolbar (and touch controls on mobile).
     // Fit the entire component in the available space, including its controls.
     const mobile = /iPhone|iPad|iPod|Android|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ||
@@ -47,7 +54,7 @@ function Player({ game, ui }) {
     const observer = new ResizeObserver(measure)
     observer.observe(area.current)
     return () => observer.disconnect()
-  }, [game.system])
+  }, [game.system, external])
   useEffect(() => {
     if (!started || loaded) return
     const id = setTimeout(() => setSlow(true), 25_000)
@@ -63,7 +70,10 @@ function Player({ game, ui }) {
         </> : (
           <div className="arcade-start">
             <Cover game={game} />
-            <button className="arcade-btn arcade-start-btn" onClick={() => setStarted(true)} autoFocus><span aria-hidden="true">▶</span> {ui.play}</button>
+            {external ? <>
+              <a className="arcade-btn arcade-start-btn" href={game.player_url} target="_blank" rel="noopener noreferrer" autoFocus><span aria-hidden="true">↗</span> {ui.playExternal}</a>
+              <p className="arcade-external-hint">{ui.externalHint}</p>
+            </> : <button className="arcade-btn arcade-start-btn" onClick={() => setStarted(true)} autoFocus><span aria-hidden="true">▶</span> {ui.play}</button>}
           </div>
         )}
       </div>
@@ -90,12 +100,15 @@ export function ArcadeMenu({ onExit }) {
     const controller = new AbortController()
     setError(false)
     setGames(null)
-    fetch('/arcade/games.json', { signal: controller.signal })
-      .then((r) => { if (!r.ok) throw new Error(`Catalog: ${r.status}`); return r.json() })
-      .then((data) => {
+    Promise.all(['/arcade/games.json', '/arcade/roqueos.json'].map((path) =>
+      fetch(path, { signal: controller.signal }).then((r) => {
+        if (!r.ok) throw new Error(`Catalog: ${r.status}`)
+        return r.json()
+      }).then((data) => {
         if (!Array.isArray(data) || !data.every(validGame)) throw new Error('Invalid arcade catalog')
-        setGames(data)
+        return data
       })
+    )).then((catalogs) => setGames(catalogs.flat()))
       .catch((err) => { if (err.name !== 'AbortError') setError(true) })
     return () => controller.abort()
   }, [reload])
@@ -172,7 +185,7 @@ export function ArcadeMenu({ onExit }) {
                 : <ul className="arcade-grid">
                   {list.slice(0, shown).map((g) => <li key={g.id}>
                     <button id={`arcade-${g.id}`} onClick={() => play(g)}>
-                      <Cover game={g} /><strong>{g.title}</strong><small>{system === 'snes' ? 'SNES' : 'PS1'}</small>
+                      <Cover game={g} /><strong>{g.title}</strong><small>{SYSTEMS.find((s) => s.id === g.system).label}</small>
                     </button>
                   </li>)}
                 </ul>}
