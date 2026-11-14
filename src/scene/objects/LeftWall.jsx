@@ -47,16 +47,12 @@ export function WallFan() {
   )
 }
 
+// Office only: at night the photo calendar (NightPoster) hangs in this spot.
 export function Calendar() {
   return (
-    <>
-      <Morph phase="night" delay={0.05} {...LAYOUT.calendar}>
-        <Panel size={[0.4, 0.53]} map={calendarTexture()} />
-      </Morph>
-      <Morph phase="day" delay={0.05} {...LAYOUT.dayCalendar}>
-        <Panel size={[0.4, 0.53]} map={calendarTexture()} />
-      </Morph>
-    </>
+    <Morph phase="day" delay={0.05} {...LAYOUT.dayCalendar}>
+      <Panel size={[0.4, 0.53]} map={calendarTexture()} />
+    </Morph>
   )
 }
 

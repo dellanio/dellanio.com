@@ -1161,3 +1161,46 @@ export function cityTexture(night) {
     }),
   )
 }
+
+// Yellow-painted wood for the bar chairs: a satin coat over visible grain, with
+// the odd scuff where the paint wore through to bare wood. The bump map carries
+// the grain so the light catches the ridges.
+function drawPaintedWood(g, w, h, bump) {
+  const rnd = seeded(bump ? 77 : 77) // same seed: bump and colour line up
+  g.fillStyle = bump ? '#808080' : '#f1bb2a'
+  g.fillRect(0, 0, w, h)
+  for (let i = 0; i < 340; i++) {
+    const x = rnd() * w
+    const tone = rnd()
+    g.strokeStyle = bump
+      ? `rgba(${tone < 0.5 ? '30,30,30' : '200,200,200'},${0.15 + rnd() * 0.3})`
+      : tone < 0.6
+        ? `rgba(120,70,6,${0.08 + rnd() * 0.2})`
+        : `rgba(255,214,90,${0.06 + rnd() * 0.14})`
+    g.lineWidth = 0.6 + rnd() * 2.2
+    g.beginPath()
+    g.moveTo(x, 0)
+    const wob = 2 + rnd() * 5
+    const f = 0.004 + rnd() * 0.01
+    for (let y = 0; y <= h; y += 8) g.lineTo(x + Math.sin(y * f + i) * wob, y)
+    g.stroke()
+  }
+  // worn spots: paint chipped to the wood underneath
+  for (let k = 0; k < 14; k++) {
+    const cx = rnd() * w
+    const cy = rnd() * h
+    const rx = 5 + rnd() * 14
+    const ry = 2 + rnd() * 6
+    g.fillStyle = bump ? 'rgba(60,60,60,0.7)' : `rgba(${120 + rnd() * 30},${78 + rnd() * 20},${34},${0.5 + rnd() * 0.3})`
+    g.beginPath()
+    g.ellipse(cx, cy, rx, ry, rnd() * 0.5 - 0.25, 0, Math.PI * 2)
+    g.fill()
+  }
+}
+export const paintedWoodTexture = () => cached('paintedWood', () => canvasTexture(512, 512, (g, w, h) => drawPaintedWood(g, w, h, false), [1, 1]))
+export const paintedWoodBump = () =>
+  cached('paintedWoodBump', () => {
+    const t = canvasTexture(512, 512, (g, w, h) => drawPaintedWood(g, w, h, true), [1, 1])
+    t.colorSpace = THREE.NoColorSpace
+    return t
+  })

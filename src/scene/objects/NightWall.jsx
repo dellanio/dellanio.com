@@ -2,7 +2,7 @@ import * as THREE from 'three'
 import React from 'react'
 import { Box, Cyl, Panel, Morph, Hotspot, PhaseLight } from '../primitives'
 import { LAYOUT } from '../layout'
-import { signTexture, soccerTexture, posterTexture } from '../textures'
+import { signTexture, soccerTexture, posterTexture, paintedWoodTexture, paintedWoodBump } from '../textures'
 import { Model } from '../Model'
 import { TvVideo } from './TvVideo'
 
@@ -55,8 +55,23 @@ export function NightSign() {
   )
 }
 
+// the GLBs' flat yellow, swapped for painted wood (the colour now comes from the
+// texture); the table's re-exported material carries a ".001"
+const PAINTED_WOOD = {
+  color: new THREE.Color('#ffffff'),
+  get map() {
+    return paintedWoodTexture()
+  },
+  get bumpMap() {
+    return paintedWoodBump()
+  },
+  bumpScale: 1.6,
+  roughness: 0.58,
+}
+const WOOD_MATERIALS = { plastic_yellow: PAINTED_WOOD, 'plastic_yellow.001': PAINTED_WOOD }
+
 function PlasticChair({ rotation = 0, ...props }) {
-  return <Model name="plasticChair" rotation={[0, rotation, 0]} {...props} />
+  return <Model name="plasticChair" materials={WOOD_MATERIALS} rotation={[0, rotation, 0]} {...props} />
 }
 
 // Amber long-neck after the reference photo: straight body with a bead under
@@ -110,17 +125,43 @@ export function BeerGlass({ fill = 0.82, ...props }) {
   )
 }
 
+// A glazed dish in the bottle's brown, with a mound of peanuts: shallow foot,
+// flat well, rim rising to a rounded lip.
+const PLATE_PROFILE = [
+  [0, 0], [0.042, 0], [0.047, 0.003], [0.052, 0.006], [0.074, 0.008], [0.092, 0.017], [0.099, 0.024], [0.096, 0.027], [0.092, 0.024], [0.074, 0.014], [0.05, 0.011], [0, 0.011],
+].map(([r, y]) => new THREE.Vector2(r, y))
+const plateGeometry = new THREE.LatheGeometry(PLATE_PROFILE, 40)
+const plateGlaze = new THREE.MeshPhysicalMaterial({ color: '#5a210a', roughness: 0.22, clearcoat: 1, clearcoatRoughness: 0.08, side: THREE.DoubleSide })
+const peanutShell = new THREE.MeshStandardMaterial({ color: '#c98e4a', roughness: 0.85 })
+const PEANUTS = Array.from({ length: 11 }, (_, i) => {
+  const a = i * 2.4
+  const r = i === 0 ? 0 : 0.012 + 0.008 * (i % 4)
+  return [Math.cos(a) * r, i < 4 ? 0.014 : 0.024, Math.sin(a) * r, a]
+})
+
+function Plate(props) {
+  return (
+    <group {...props}>
+      <mesh geometry={plateGeometry} material={plateGlaze} castShadow receiveShadow />
+      {PEANUTS.map(([x, y, z, a], i) => (
+        <mesh key={i} position={[x, y, z]} rotation={[0.3, a, 0.5]} scale={[1.5, 0.9, 1]} material={peanutShell} castShadow>
+          <sphereGeometry args={[0.0095, 8, 6]} />
+        </mesh>
+      ))}
+    </group>
+  )
+}
+
 function PlasticTable({ seats = [0, Math.PI / 2, Math.PI], ...props }) {
   return (
     <group {...props}>
-      <Model name="plasticTable" />
+      <Model name="plasticTable" materials={WOOD_MATERIALS} />
       <group position={[0, 0.735, 0]}>
         {/* a beer bottle, two glasses and a plate of peanuts */}
         <BeerBottle position={[0.05, 0, 0.05]} rotation={[0, 0.6, 0]} />
         <BeerGlass position={[-0.15, 0, 0.1]} />
         <BeerGlass position={[0.18, 0, -0.12]} fill={0.55} />
-        <Cyl r={0.09} h={0.015} color="#f4f1de" position={[-0.08, 0.008, -0.15]} />
-        <Cyl r={0.06} h={0.02} color="#b5793a" position={[-0.08, 0.02, -0.15]} />
+        <Plate position={[-0.08, 0, -0.15]} />
       </group>
       {seats.map((a, i) => (
         <PlasticChair key={i} position={[Math.sin(a) * 0.62, 0, Math.cos(a) * 0.62]} rotation={a + Math.PI} />

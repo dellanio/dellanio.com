@@ -22,14 +22,13 @@ export { day as dayPoint }
 export const LAYOUT = {
   // ---- shared fixtures (back wall, far left) ----
   fan: { position: [-0.33, 2.46, -4.5] },
-  calendar: { position: [-0.33, 1.71, -4.455] }, // in front of the tile trim
 
   // ---- night: boteco photo ----
   pool: { position: [0, 0, 0], rotation: [0, -Math.PI / 2, 0] }, // rack on the end nearest the camera
   poolLamp: { position: [0, 2.23, 0], rotation: [0, Math.PI / 2, 0], scale: [1.18, 1, 1] },
   cueRack: { position: [0.45, 1.38, -4.5], scale: [0.62, 1.14, 1] },
   nightSign: { position: [1.6, 2.4, -4.48], scale: 0.93 },
-  poster: { position: [1.7, 1.55, -4.455] }, // in front of the tile trim
+  poster: { position: [-0.33, 1.71, -4.455] }, // under the fan, in front of the tile trim
   tv: { position: [1.1, 2.45, -1.7], rotation: [0, FACE_CAMERA, 0], scale: 0.74 },
   crates: { position: [4.0, 0, -4.2], scale: [1.08, 1.18, 1.08] }, // labels to the front of the room
   floorCrate: { position: [3.75, 0, -3.8] },
