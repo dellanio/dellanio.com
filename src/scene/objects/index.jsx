@@ -13,6 +13,7 @@ import { Lounge, Plant, HangingPlant, PlantShelf, PendantLamp } from './Lounge'
 import { PoolTable, PoolLamp } from './PoolTable'
 import { Chalkboard } from './Chalkboard'
 import { BarCounter, BottleShelf, BeerFridge, Crates } from './Bar'
+import { Arcade } from './Arcade'
 import { Tv, CueRack, NightSign, NightPoster, PlasticTables, FluorescentTube } from './NightWall'
 import { Sunbeam } from './Sunbeam'
 import { WalkingCockatiel } from './Cockatiel'
@@ -72,6 +73,7 @@ export function Objects({ tvOn, tvFocused }) {
       <NightPoster />
       <PlasticTables />
       <Crates />
+      <Arcade />
       <FluorescentTube />
       <Dog />
     </group>

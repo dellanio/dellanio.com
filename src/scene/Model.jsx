@@ -32,6 +32,7 @@ export const MODELS = {
   snackCase: '/models/snack_case.glb',
   cueRack: '/models/cue_rack.glb',
   wallFan: '/models/wall_fan.glb',
+  arcade: '/models/arcade.glb',
 }
 
 // `screens` maps a material name in the GLB to a texture shown unlit (monitor, TV).
@@ -87,5 +88,5 @@ export function Model({ name, fallback = null, ...props }) {
 
 // Only what the two rooms actually show is fetched up front.
 const PRELOAD = ['plantTall', 'plantWide', 'succulent', 'officeChair', 'poolTable', 'barCounter', 'beerFridge',
-  'plasticChair', 'plasticTable', 'bottleShelf', 'snackCase', 'cueRack', 'wallFan', 'jars', 'espresso', 'deskLamp', 'pothos', 'cockatiel', 'dog']
+  'plasticChair', 'plasticTable', 'bottleShelf', 'snackCase', 'cueRack', 'wallFan', 'jars', 'espresso', 'deskLamp', 'pothos', 'cockatiel', 'dog', 'arcade']
 PRELOAD.forEach((name) => useGLTF.preload(MODELS[name], DRACO))

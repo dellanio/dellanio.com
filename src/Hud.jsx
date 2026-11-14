@@ -7,7 +7,7 @@ export function Hud({ mode, selected, onSelect, onToggle }) {
   // the pool table opens the game instead of a text panel
   const lang = useLang()
   const ui = UI[lang]
-  const panel = selected && selected !== 'sinuca' && CONTENT[lang][selected]
+  const panel = selected && selected !== 'sinuca' && selected !== 'fliperama' && CONTENT[lang][selected]
   return (
     <div className={`hud ${mode}`}>
       <div className="brand">dellanio.com</div>

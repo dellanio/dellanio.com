@@ -270,19 +270,12 @@ export function Crates() {
         <Crate color="#1f4f9c" label="ANTARCTICA" position={[0.25, 0.32, 0]} rotation={[0, 0.04, 0]} />
         <Crate color="#e8b923" label="SKOL" position={[0.25, 0.64, 0.02]} rotation={[0, -0.05, 0]} />
       </Morph>
-      {/* yellow crate of empties, the yellow stand and a bottle on the floor */}
+      {/* yellow crate of empties */}
       <Morph phase="night" delay={0.12} {...LAYOUT.floorCrate}>
         <Box radius={0.015} size={[0.42, 0.2, 0.3]} position={[0, 0.1, 0]} color="#e8b923" mat={{ roughness: 0.55 }} />
         {[-0.12, 0, 0.12].map((x) => (
           <Bottle key={x} color="#5a2e0e" h={0.24} r={0.028} position={[x, 0.05, 0.03]} />
         ))}
-      </Morph>
-      <Morph phase="night" delay={0.12} {...LAYOUT.signStand}>
-        <Box size={[0.32, 0.5, 0.025]} position={[0, 0.25, 0]} rotation={[-0.18, 0, 0]} color="#e8b923" mat={{ roughness: 0.5 }} />
-        <Box size={[0.3, 0.025, 0.2]} position={[0, 0.0125, 0.1]} color="#d4a51c" />
-      </Morph>
-      <Morph phase="night" delay={0.12} {...LAYOUT.floorBottle}>
-        <Bottle color="#2e5a1e" h={0.3} r={0.03} />
       </Morph>
     </>
   )

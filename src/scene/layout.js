@@ -32,8 +32,7 @@ export const LAYOUT = {
   tv: { position: [1.1, 2.45, -1.7], rotation: [0, FACE_CAMERA, 0], scale: 0.74 },
   crates: { position: [4.0, 0, -4.2], scale: [1.08, 1.18, 1.08] }, // labels to the front of the room
   floorCrate: { position: [3.75, 0, -3.8] },
-  signStand: { position: [2.37, 0, -3.75], rotation: [0, FACE_CAMERA + 0.3, 0] },
-  floorBottle: { position: [2.71, 0, -3.7] },
+  arcade: { position: [1.7, 0, -4.08] }, // against the back wall, where the photo calendar hung
   beerFridge: { position: [4.56, 0, -2.95], rotation: [0, -Math.PI / 2, 0], scale: [1.12, 1.3, 1.12] }, // back to the bar wall, door facing into the room
   chalkboard: { position: [4.93, 2.12, -1.39], rotation: BAR_WALL, scale: [0.85, 0.82, 1] },
   bottleShelf: { position: [4.8, 0, 0.05], rotation: BAR_WALL },

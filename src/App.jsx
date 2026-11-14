@@ -6,6 +6,7 @@ import { timeState, autoMode } from './scene/state'
 import { CAMERAS } from './scene/layout'
 import { Hud } from './Hud'
 import { PoolGame } from './game/PoolGame'
+import { ArcadeMenu } from './ArcadeMenu'
 import { setPlaying as setPoolPlaying } from './game/store'
 import { startBotecoRadio, leaveBotecoRadio } from './radio'
 
@@ -90,6 +91,15 @@ export default function App() {
   useEffect(() => setPoolPlaying(playing), [playing])
   const exitGame = useCallback(() => setSelected(null), [])
 
+  // The arcade works the same way: the camera faces its screen, then the game
+  // menu opens over the scene.
+  const [arcade, setArcade] = useState(false)
+  useEffect(() => {
+    if (selected !== 'fliperama') return setArcade(false)
+    const id = setTimeout(() => setArcade(true), 750)
+    return () => clearTimeout(id)
+  }, [selected])
+
   const toggle = useCallback(() => {
     setManual(true)
     setMode((m) => (m === 'day' ? 'night' : 'day'))
@@ -99,6 +109,8 @@ export default function App() {
     <>
       <Canvas
         shadows
+        // the arcade menu covers the scene: stop drawing it so the emulator has the GPU and CPU to itself
+        frameloop={arcade ? 'never' : 'always'}
         dpr={low ? [1, 1.25] : [1, 1.75]}
         camera={{ fov: CAMERAS[mode].fov, position: CAMERAS[mode].pos, near: 0.1, far: 80 }}
         onPointerMissed={() => setSelected(null)}
@@ -107,7 +119,13 @@ export default function App() {
         <PerformanceMonitor onDecline={onDecline} flipflops={1} />
         <Experience selected={selected} onSelect={setSelected} low={low} mode={mode} />
       </Canvas>
-      {playing ? <PoolGame onExit={exitGame} /> : <Hud mode={mode} selected={selected} onSelect={setSelected} onToggle={toggle} />}
+      {playing ? (
+        <PoolGame onExit={exitGame} />
+      ) : arcade ? (
+        <ArcadeMenu onExit={exitGame} />
+      ) : (
+        <Hud mode={mode} selected={selected} onSelect={setSelected} onToggle={toggle} />
+      )}
     </>
   )
 }

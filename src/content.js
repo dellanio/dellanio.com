@@ -9,6 +9,7 @@ export const VIEWS = {
   sinuca: { pos: [-2.25, 2.2, 0], target: [0, 0.8, 0] }, // from the side, under the lamp, the table runs across the screen
   cardapio: { pos: [1.9, 2.15, -1.3], target: [4.93, 2.1, -1.39] },
   tv: { pos: [-0.25, 2.62, -0.4], target: [1.1, 2.45, -1.7] },
+  fliperama: { pos: [1.7, 1.38, -2.85], target: [1.7, 1.2, -4.05] }, // square on to the arcade screen
   mesa: { pos: [0.8, 2.0, -0.9], target: [-1.3, 0.7, -3.0] },
 }
 
@@ -276,6 +277,7 @@ export const NAV = {
       { id: 'cardapio', label: 'Cardápio' },
       { id: 'sinuca', label: 'Sinuca' },
       { id: 'tv', label: 'TV' },
+      { id: 'fliperama', label: 'Fliperama' },
       { id: 'mesa', label: 'Senta aí' },
     ],
   },
@@ -290,6 +292,7 @@ export const NAV = {
       { id: 'cardapio', label: 'Menu' },
       { id: 'sinuca', label: 'Pool' },
       { id: 'tv', label: 'TV' },
+      { id: 'fliperama', label: 'Arcade' },
       { id: 'mesa', label: 'Pull up a chair' },
     ],
   },
@@ -297,8 +300,8 @@ export const NAV = {
 
 // Tooltip over each 3D hotspot.
 export const HOTSPOT_LABELS = {
-  pt: { curriculo: 'Currículo', portfolio: 'Portfólio', sobre: 'Sobre', contato: 'Contato', sinuca: 'Jogar sinuca 🎱', cardapio: 'Cardápio de serviços', tv: 'Demos & vídeos', mesa: 'Senta aí' },
-  en: { curriculo: 'Résumé', portfolio: 'Portfolio', sobre: 'About', contato: 'Contact', sinuca: 'Play pool 🎱', cardapio: 'Services menu', tv: 'Demos & videos', mesa: 'Pull up a chair' },
+  pt: { curriculo: 'Currículo', portfolio: 'Portfólio', sobre: 'Sobre', contato: 'Contato', sinuca: 'Jogar sinuca 🎱', cardapio: 'Cardápio de serviços', tv: 'Demos & vídeos', fliperama: 'Fliperama 🕹️', mesa: 'Senta aí' },
+  en: { curriculo: 'Résumé', portfolio: 'Portfolio', sobre: 'About', contato: 'Contact', sinuca: 'Play pool 🎱', cardapio: 'Services menu', tv: 'Demos & videos', fliperama: 'Arcade 🕹️', mesa: 'Pull up a chair' },
 }
 
 // HUD strings.
@@ -308,6 +311,7 @@ export const UI = {
     bar: 'Boteco',
     toggle: 'Alternar dia e noite',
     close: 'Fechar',
+    arcade: { title: 'Fliperama', back: '← Voltar à lista', exit: '← Voltar ao boteco', loading: 'Carregando jogos…', empty: 'Nenhum jogo aqui ainda.', by: 'por', license: 'Licença', source: 'Página do jogo', note: 'Jogos homebrew, feitos por fãs e liberados pelos autores. Emulação: EmulatorJS.' },
     radio: { label: 'Rádio do boteco', on: 'Desligar o rádio', off: 'Ligar o rádio', volume: 'Volume do rádio', hint: 'Clique para ligar ou desligar', status: { off: 'Desligado', loading: 'Sintonizando…', playing: 'Ao vivo', blocked: 'Toque para ligar', error: 'Fora do ar' } },
   },
   en: {
@@ -315,6 +319,7 @@ export const UI = {
     bar: 'Boteco',
     toggle: 'Switch day and night',
     close: 'Close',
+    arcade: { title: 'Arcade', back: '← Back to the list', exit: '← Back to the bar', loading: 'Loading games…', empty: 'No games here yet.', by: 'by', license: 'License', source: 'Game page', note: 'Homebrew games, made by fans and released by their authors. Emulation: EmulatorJS.' },
     radio: { label: 'Boteco radio', on: 'Turn the radio off', off: 'Turn the radio on', volume: 'Radio volume', hint: 'Click to switch it on or off', status: { off: 'Off', loading: 'Tuning in…', playing: 'Live', blocked: 'Tap to turn on', error: 'Off the air' } },
   },
 }
