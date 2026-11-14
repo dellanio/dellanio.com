@@ -152,7 +152,7 @@
     "license": "MIT",
     "license_url": "/arcade/licenses/tetrade.txt",
     "source_url": "https://github.com/Logan-Campbell/Tetrade",
-    "rom": "/arcade/roms/psx/tetrade.zip",
+    "rom": "/arcade/roms/psx/tetrade.disc",
     "cover": "/arcade/covers/tetrade.png"
   }
 ]
