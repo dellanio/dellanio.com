@@ -66,6 +66,23 @@ Física própria (colisões bola-bola e bola-tabela, atrito de rolamento), regra
 grupos lisas e listradas, faltas e bola na mão, e um oponente com mira calculada. Mire, segure e
 puxe para trás; solte para dar a tacada. Há sons de tacada, de bolas e de caçapa.
 
+### Fliperama
+
+O gabinete abre um catálogo com os mais jogados de SNES, títulos extras de SNES e uma seleção de PS1 do
+[OldGames](https://oldgames.app). Escolher uma capa abre a área do jogo; **Jogar** carrega
+somente o player remoto em um iframe, preservando os botões de retorno do site.
+A cena 3D pausa enquanto o fliperama está aberto, e o rádio retorna ao sair se estava ligado.
+
+`public/arcade/games.json` guarda títulos, capas, páginas de origem e URLs dos players.
+As ROMs e o emulador são servidos pelo OldGames; sua disponibilidade depende desse serviço.
+Não há mais jogos ou emulador hospedados em `public/arcade/roms` ou `play.html`.
+
+Para atualizar o catálogo, coloque os links extras de SNES em `scripts/oldgames-snes.json`
+e os de PS1 em `scripts/oldgames-ps1.json`. Execute `python scripts/import-oldgames.py`.
+O script consulta a seção SNES mais jogados e o player de cada título selecionado;
+só substitui o catálogo quando todas as consultas são bem-sucedidas. A atualização é manual,
+sem chamadas ao catálogo externo durante o build ou a navegação do visitante.
+
 ## Tecnologia
 
 | Camada | Escolha |

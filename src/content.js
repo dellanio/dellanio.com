@@ -311,7 +311,7 @@ export const UI = {
     bar: 'Boteco',
     toggle: 'Alternar dia e noite',
     close: 'Fechar',
-    arcade: { title: 'Fliperama', back: '← Voltar à lista', exit: '← Voltar ao boteco', loading: 'Carregando jogos…', empty: 'Nenhum jogo aqui ainda.', by: 'por', license: 'Licença', source: 'Página do jogo', note: 'Jogos homebrew, feitos por fãs e liberados pelos autores. Emulação: EmulatorJS.' },
+    arcade: { title: 'Fliperama', back: '← Voltar à lista', exit: '← Voltar ao boteco', loading: 'Carregando jogos…', empty: 'Nenhum jogo aqui ainda.', systems: 'Console', search: 'Buscar jogo pelo nome…', games: 'jogos', game: 'jogo', noResults: 'Nenhum jogo encontrado para essa busca.', error: 'Não foi possível carregar os jogos.', retry: 'Tentar novamente', more: 'Mostrar mais', play: 'Jogar', opening: 'Abrindo jogo…', slow: 'O player está demorando para abrir.', ps1Note: 'Jogos de PS1 selecionados no OldGames.' },
     radio: { label: 'Rádio do boteco', on: 'Desligar o rádio', off: 'Ligar o rádio', volume: 'Volume do rádio', hint: 'Clique para ligar ou desligar', status: { off: 'Desligado', loading: 'Sintonizando…', playing: 'Ao vivo', blocked: 'Toque para ligar', error: 'Fora do ar' } },
   },
   en: {
@@ -319,7 +319,7 @@ export const UI = {
     bar: 'Boteco',
     toggle: 'Switch day and night',
     close: 'Close',
-    arcade: { title: 'Arcade', back: '← Back to the list', exit: '← Back to the bar', loading: 'Loading games…', empty: 'No games here yet.', by: 'by', license: 'License', source: 'Game page', note: 'Homebrew games, made by fans and released by their authors. Emulation: EmulatorJS.' },
+    arcade: { title: 'Arcade', back: '← Back to the list', exit: '← Back to the bar', loading: 'Loading games…', empty: 'No games here yet.', systems: 'Console', search: 'Search games by name…', games: 'games', game: 'game', noResults: 'No games match your search.', error: 'Could not load the games.', retry: 'Try again', more: 'Show more', play: 'Play', opening: 'Opening game…', slow: 'The player is taking longer to open.', ps1Note: 'Selected PS1 games from OldGames.' },
     radio: { label: 'Boteco radio', on: 'Turn the radio off', off: 'Turn the radio on', volume: 'Radio volume', hint: 'Click to switch it on or off', status: { off: 'Off', loading: 'Tuning in…', playing: 'Live', blocked: 'Tap to turn on', error: 'Off the air' } },
   },
 }

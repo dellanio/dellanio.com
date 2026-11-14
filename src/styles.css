@@ -592,6 +592,7 @@ canvas {
 }
 .arcade-list {
   flex: 1;
+  min-height: 0;
   overflow-y: auto;
   padding: 24px;
   scrollbar-color: rgba(255, 255, 255, 0.25) transparent;
@@ -649,7 +650,9 @@ canvas {
   opacity: 0.65;
 }
 .arcade-more {
-  height: 1px;
+  display: flex;
+  justify-content: center;
+  padding: 24px 0;
 }
 .arcade-msg,
 .arcade-note {
@@ -669,25 +672,67 @@ canvas {
   padding: 16px;
   min-height: 0;
 }
-.arcade-play iframe {
+.arcade-player {
   flex: 1;
   width: min(100%, 1100px);
-  border: 0;
+  min-height: 0;
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: auto;
   border-radius: 10px;
   background: #000;
 }
+.arcade-player iframe {
+  border: 0;
+  background: #000;
+}
+.arcade-search {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 24px 0;
+}
+.arcade-search input {
+  width: min(100%, 480px);
+  min-width: 0;
+  padding: 10px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.3);
+  color: inherit;
+  font: inherit;
+}
+.arcade-search span { white-space: nowrap; font-size: 13px; opacity: 0.75; }
+.arcade-overlay button:focus-visible,
+.arcade-search input:focus-visible { outline: 2px solid #e8a91c; outline-offset: 3px; }
+.arcade-start {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  background: radial-gradient(ellipse, #302017, #080604 75%);
+}
+.arcade-start img,
+.arcade-start .arcade-nocover { max-width: 65%; max-height: 60%; object-fit: contain; border-radius: 4px; }
+.arcade-start-btn { padding: 12px 32px; color: #1a1206; background: #e8a91c; font-weight: 700; }
+.arcade-start-btn:hover { background: #f8bf43; }
+.arcade-player-status { position: absolute; top: 12px; left: 16px; margin: 0; pointer-events: none; }
 .arcade-credit {
   margin: 0;
   font-size: 13px;
   opacity: 0.8;
   text-align: center;
 }
-.arcade-credit a {
-  color: #e8a91c;
-}
 @media (max-width: 640px) {
   .arcade-top {
     padding: 12px 16px;
+  }
+  .arcade-tabs {
+    flex-basis: 100%;
   }
   .arcade-list {
     padding: 16px;

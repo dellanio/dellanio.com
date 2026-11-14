@@ -1,158 +1,234 @@
 [
   {
-    "id": "elevator-madness-dx",
+    "id": "oldgames-1466",
     "system": "snes",
-    "title": "Elevator Madness DX",
-    "author": "Marcus Rowe (undisbeliever)",
-    "year": 2016,
-    "license": "MIT",
-    "license_url": "/arcade/licenses/elevator-madness-dx.txt",
-    "source_url": "https://github.com/undisbeliever/elevator-madness-dx",
-    "rom": "/arcade/roms/snes/elevator-madness-dx.sfc",
-    "cover": "/arcade/covers/elevator-madness-dx.png"
+    "title": "Contra III - The Alien Wars",
+    "cover": "https://r2.oldgames.app/snes/contra-iii-the-alien-wars/images/snes_contra_iii_-_the_alien_wars_1.gif",
+    "source_url": "https://oldgames.app/games/snes/contra-iii-the-alien-wars-1466",
+    "player_url": "https://oldgames.app/emulator?id=aHR0cHM6Ly9yMi5vbGRnYW1lcy5hcHAvc25lcy9jb250cmEtaWlpLXRoZS1hbGllbi13YXJzL2NvbnRyYS1paWktdGhlLWFsaWVuLXdhcnMuemlw&console=snes&emulatorJsCore=snes&v=1.0.0"
   },
   {
-    "id": "castle-platformer",
+    "id": "oldgames-2603",
     "system": "snes",
-    "title": "Castle Platformer",
-    "author": "Marcus Rowe (undisbeliever)",
-    "year": 2016,
-    "license": "MIT / CC0",
-    "license_url": "/arcade/licenses/castle-platformer.txt",
-    "source_url": "https://github.com/undisbeliever/castle_platformer",
-    "rom": "/arcade/roms/snes/castle-platformer.sfc",
-    "cover": "/arcade/covers/castle-platformer.png"
+    "title": "Street Fighter II - The World Warrior",
+    "cover": "https://r2.oldgames.app/snes/street-fighter-ii-the-world-warrior/images/snes_street_fighter_ii_-_the_world_warrior_1.gif",
+    "source_url": "https://oldgames.app/games/snes/street-fighter-ii-the-world-warrior-2603",
+    "player_url": "https://oldgames.app/emulator?id=aHR0cHM6Ly9yMi5vbGRnYW1lcy5hcHAvc25lcy9zdHJlZXQtZmlnaHRlci1paS10aGUtd29ybGQtd2Fycmlvci9zdHJlZXQtZmlnaHRlci1paS10aGUtd29ybGQtd2Fycmlvci56aXA%3D&console=snes&emulatorJsCore=snes&v=1.0.0"
   },
   {
-    "id": "horizontal-shooter",
+    "id": "oldgames-2182",
     "system": "snes",
-    "title": "Horizontal Shooter",
-    "author": "Marcus Rowe (undisbeliever)",
-    "year": 2019,
-    "license": "MIT / CC0",
-    "license_url": "/arcade/licenses/horizontal-shooter.txt",
-    "source_url": "https://github.com/undisbeliever/horizontal-shooter",
-    "rom": "/arcade/roms/snes/horizontal-shooter.sfc",
-    "cover": "/arcade/covers/horizontal-shooter.png"
+    "title": "NBA Jam",
+    "cover": "https://r2.oldgames.app/snes/nba-jam/images/snes_nba_jam_1.gif",
+    "source_url": "https://oldgames.app/games/snes/nba-jam-2182",
+    "player_url": "https://oldgames.app/emulator?id=aHR0cHM6Ly9yMi5vbGRnYW1lcy5hcHAvc25lcy9uYmEtamFtL25iYS1qYW0uemlw&console=snes&emulatorJsCore=snes&v=1.0.0"
   },
   {
-    "id": "bat-cave",
+    "id": "oldgames-2108",
     "system": "snes",
-    "title": "Bat Cave",
-    "author": "Marcus Rowe (undisbeliever)",
-    "year": 2016,
-    "license": "MIT / CC0",
-    "license_url": "/arcade/licenses/bat-cave.txt",
-    "source_url": "https://github.com/undisbeliever/bat-cave",
-    "rom": "/arcade/roms/snes/bat-cave.sfc",
-    "cover": "/arcade/covers/bat-cave.png"
+    "title": "Mega Man X",
+    "cover": "https://r2.oldgames.app/snes/mega-man-x/images/snes_mega_man_x_1.gif",
+    "source_url": "https://oldgames.app/games/snes/mega-man-x-2108",
+    "player_url": "https://oldgames.app/emulator?id=aHR0cHM6Ly9yMi5vbGRnYW1lcy5hcHAvc25lcy9tZWdhLW1hbi14L21lZ2EtbWFuLXguemlw&console=snes&emulatorJsCore=snes&v=1.0.0"
   },
   {
-    "id": "falling-tower",
+    "id": "oldgames-2032",
     "system": "snes",
-    "title": "Falling Tower",
-    "author": "Marcus Rowe (undisbeliever)",
-    "year": 2016,
-    "license": "MIT / CC0",
-    "license_url": "/arcade/licenses/falling-tower.txt",
-    "source_url": "https://github.com/undisbeliever/falling-tower",
-    "rom": "/arcade/roms/snes/falling-tower.sfc",
-    "cover": "/arcade/covers/falling-tower.png"
+    "title": "Lion King, The",
+    "cover": null,
+    "source_url": "https://oldgames.app/games/snes/lion-king-the-2032",
+    "player_url": "https://oldgames.app/emulator?id=aHR0cHM6Ly9yMi5vbGRnYW1lcy5hcHAvc25lcy9saW9uLWtpbmctdGhlL2xpb24ta2luZy10aGUuemlw&console=snes&emulatorJsCore=snes&v=1.0.0"
   },
   {
-    "id": "cannons",
+    "id": "oldgames-2899",
     "system": "snes",
-    "title": "Cannons",
-    "author": "Marcus Rowe (undisbeliever)",
-    "year": 2016,
-    "license": "MIT",
-    "license_url": "/arcade/licenses/cannons.txt",
-    "source_url": "https://github.com/undisbeliever/cannons",
-    "rom": "/arcade/roms/snes/cannons.sfc",
-    "cover": "/arcade/covers/cannons.png"
+    "title": "Top Gear",
+    "cover": "https://r2.oldgames.app/snes/top-gear/images/snes_top_gear_1.gif",
+    "source_url": "https://oldgames.app/games/snes/top-gear-2899",
+    "player_url": "https://oldgames.app/emulator?id=aHR0cHM6Ly9yMi5vbGRnYW1lcy5hcHAvc25lcy90b3AtZ2Vhci90b3AtZ2Vhci56aXA%3D&console=snes&emulatorJsCore=snes&v=1.0.0"
   },
   {
-    "id": "pipes",
+    "id": "oldgames-2135",
     "system": "snes",
-    "title": "Pipes",
-    "author": "Marcus Rowe (undisbeliever)",
-    "year": 2016,
-    "license": "MIT",
-    "license_url": "/arcade/licenses/pipes.txt",
-    "source_url": "https://github.com/undisbeliever/pipes",
-    "rom": "/arcade/roms/snes/pipes.sfc",
-    "cover": "/arcade/covers/pipes.png"
+    "title": "Mighty Morphin Power Rangers - The Movie",
+    "cover": "https://r2.oldgames.app/snes/mighty-morphin-power-rangers-the-movie/images/snes_mighty_morphin_power_rangers_-_the_movie_1.gif",
+    "source_url": "https://oldgames.app/games/snes/mighty-morphin-power-rangers-the-movie-2135",
+    "player_url": "https://oldgames.app/emulator?id=aHR0cHM6Ly9yMi5vbGRnYW1lcy5hcHAvc25lcy9taWdodHktbW9ycGhpbi1wb3dlci1yYW5nZXJzLXRoZS1tb3ZpZS9taWdodHktbW9ycGhpbi1wb3dlci1yYW5nZXJzLXRoZS1tb3ZpZS56aXA%3D&console=snes&emulatorJsCore=snes&v=1.0.0"
   },
   {
-    "id": "memory-game",
+    "id": "oldgames-2801",
     "system": "snes",
-    "title": "Memory Game",
-    "author": "Marcus Rowe (undisbeliever)",
-    "year": 2016,
-    "license": "MIT",
-    "license_url": "/arcade/licenses/memory-game.txt",
-    "source_url": "https://github.com/undisbeliever/memory-game",
-    "rom": "/arcade/roms/snes/memory-game.sfc",
-    "cover": "/arcade/covers/memory-game.png"
+    "title": "Super Street Fighter II - The New Challengers",
+    "cover": "https://r2.oldgames.app/snes/super-street-fighter-ii-the-new-challengers/images/snes_super_street_fighter_ii_-_the_new_challengers_1.gif",
+    "source_url": "https://oldgames.app/games/snes/super-street-fighter-ii-the-new-challengers-2801",
+    "player_url": "https://oldgames.app/emulator?id=aHR0cHM6Ly9yMi5vbGRnYW1lcy5hcHAvc25lcy9zdXBlci1zdHJlZXQtZmlnaHRlci1paS10aGUtbmV3LWNoYWxsZW5nZXJzL3N1cGVyLXN0cmVldC1maWdodGVyLWlpLXRoZS1uZXctY2hhbGxlbmdlcnMuemlw&console=snes&emulatorJsCore=snes&v=1.0.0"
   },
   {
-    "id": "pong",
+    "id": "oldgames-1728",
     "system": "snes",
-    "title": "Pong",
-    "author": "Marcus Rowe (undisbeliever)",
-    "year": 2015,
-    "license": "MIT",
-    "license_url": "/arcade/licenses/pong.txt",
-    "source_url": "https://github.com/undisbeliever/pong",
-    "rom": "/arcade/roms/snes/pong.sfc",
-    "cover": "/arcade/covers/pong.png"
+    "title": "Godzilla - Kaijuu Daikessen",
+    "cover": "https://r2.oldgames.app/snes/godzilla-kaijuu-daikessen/images/snes_godzilla_-_kaijuu_daikessen_1.gif",
+    "source_url": "https://oldgames.app/games/snes/godzilla-kaijuu-daikessen-1728",
+    "player_url": "https://oldgames.app/emulator?id=aHR0cHM6Ly9yMi5vbGRnYW1lcy5hcHAvc25lcy9nb2R6aWxsYS1rYWlqdXUtZGFpa2Vzc2VuL2dvZHppbGxhLWthaWp1dS1kYWlrZXNzZW4uemlw&console=snes&emulatorJsCore=snes&v=1.0.0"
   },
   {
-    "id": "unnamed-tech-demo",
+    "id": "oldgames-2941",
     "system": "snes",
-    "title": "Unnamed SNES Game (demo)",
-    "author": "Marcus Rowe (undisbeliever), música de KungFuFurby",
-    "year": 2024,
-    "license": "MIT / CC BY-SA 4.0",
-    "license_url": "/arcade/licenses/unnamed-tech-demo.txt",
-    "source_url": "https://github.com/undisbeliever/unnamed-snes-engine",
-    "rom": "/arcade/roms/snes/unnamed-tech-demo.sfc",
-    "cover": "/arcade/covers/unnamed-tech-demo.jpeg"
+    "title": "Ultimate Mortal Kombat 3",
+    "cover": "https://r2.oldgames.app/snes/ultimate-mortal-kombat-3/images/snes_ultimate_mortal_kombat_3_1.gif",
+    "source_url": "https://oldgames.app/games/snes/ultimate-mortal-kombat-3-2941",
+    "player_url": "https://oldgames.app/emulator?id=aHR0cHM6Ly9yMi5vbGRnYW1lcy5hcHAvc25lcy91bHRpbWF0ZS1tb3J0YWwta29tYmF0LTMvdWx0aW1hdGUtbW9ydGFsLWtvbWJhdC0zLnppcA%3D%3D&console=snes&emulatorJsCore=snes&v=1.0.0"
   },
   {
-    "id": "gothicvania",
+    "id": "oldgames-1457",
     "system": "snes",
-    "title": "Gothicvania",
-    "author": "donth77, arte de ansimuz",
-    "year": 2026,
-    "license": "MIT / CC0",
-    "license_url": "/arcade/licenses/gothicvania.txt",
-    "source_url": "https://github.com/donth77/snes-homebrew",
-    "rom": "/arcade/roms/snes/gothicvania.sfc",
-    "cover": "/arcade/covers/gothicvania.png"
+    "title": "Clue",
+    "cover": "https://r2.oldgames.app/snes/clue/images/snes_clue_1.gif",
+    "source_url": "https://oldgames.app/games/snes/clue-1457",
+    "player_url": "https://oldgames.app/emulator?id=aHR0cHM6Ly9yMi5vbGRnYW1lcy5hcHAvc25lcy9jbHVlL2NsdWUuemlw&console=snes&emulatorJsCore=snes&v=1.0.0"
   },
   {
-    "id": "super-apocalux",
+    "id": "oldgames-1281",
     "system": "snes",
-    "title": "Super Apocalux",
-    "author": "DanielTheSilly",
-    "year": null,
-    "license": "GPL-3.0",
-    "license_url": "/arcade/licenses/super-apocalux.txt",
-    "source_url": "https://github.com/DanielTheSilly/Super-Apocalux",
-    "rom": "/arcade/roms/snes/super-apocalux.sfc",
-    "cover": null
+    "title": "Animaniacs",
+    "cover": "https://r2.oldgames.app/snes/animaniacs/images/snes_animaniacs_1.gif",
+    "source_url": "https://oldgames.app/games/snes/animaniacs-1281",
+    "player_url": "https://oldgames.app/emulator?id=aHR0cHM6Ly9yMi5vbGRnYW1lcy5hcHAvc25lcy9hbmltYW5pYWNzL2FuaW1hbmlhY3Muemlw&console=snes&emulatorJsCore=snes&v=1.0.0"
   },
   {
-    "id": "tetrade",
+    "id": "oldgames-2697",
+    "system": "snes",
+    "title": "Super Ghouls 'N Ghosts",
+    "cover": "https://r2.oldgames.app/snes/super-ghouls-n-ghosts/images/snes_super_ghouls_n_ghosts_1.gif",
+    "source_url": "https://oldgames.app/games/snes/super-ghouls-n-ghosts-2697",
+    "player_url": "https://oldgames.app/emulator?id=aHR0cHM6Ly9yMi5vbGRnYW1lcy5hcHAvc25lcy91bmRlZmluZWQ%3D&console=snes&emulatorJsCore=snes&v=1.0.0"
+  },
+  {
+    "id": "oldgames-2648",
+    "system": "snes",
+    "title": "Super Bomberman 5",
+    "cover": "https://r2.oldgames.app/snes/super-bomberman-5/images/snes_super_bomberman_5_1.gif",
+    "source_url": "https://oldgames.app/games/snes/super-bomberman-5-2648",
+    "player_url": "https://oldgames.app/emulator?id=aHR0cHM6Ly9yMi5vbGRnYW1lcy5hcHAvc25lcy9zdXBlci1ib21iZXJtYW4tNS9zdXBlci1ib21iZXJtYW4tNS56aXA%3D&console=snes&emulatorJsCore=snes&v=1.0.0"
+  },
+  {
+    "id": "oldgames-2574",
+    "system": "snes",
+    "title": "Speedy Gonzales - Los Gatos Bandidos",
+    "cover": "https://r2.oldgames.app/snes/speedy-gonzales-los-gatos-bandidos/images/snes_speedy_gonzales_-_los_gatos_bandidos_1.gif",
+    "source_url": "https://oldgames.app/games/snes/speedy-gonzales-los-gatos-bandidos-2574",
+    "player_url": "https://oldgames.app/emulator?id=aHR0cHM6Ly9yMi5vbGRnYW1lcy5hcHAvc25lcy9zcGVlZHktZ29uemFsZXMtbG9zLWdhdG9zLWJhbmRpZG9zL3NwZWVkeS1nb256YWxlcy1sb3MtZ2F0b3MtYmFuZGlkb3Muemlw&console=snes&emulatorJsCore=snes&v=1.0.0"
+  },
+  {
+    "id": "oldgames-2119",
+    "system": "snes",
+    "title": "Metal Warriors",
+    "cover": "https://r2.oldgames.app/snes/metal-warriors/images/snes_metal_warriors_1.gif",
+    "source_url": "https://oldgames.app/games/snes/metal-warriors-2119",
+    "player_url": "https://oldgames.app/emulator?id=aHR0cHM6Ly9yMi5vbGRnYW1lcy5hcHAvc25lcy9tZXRhbC13YXJyaW9ycy9tZXRhbC13YXJyaW9ycy56aXA%3D&console=snes&emulatorJsCore=snes&v=1.0.0"
+  },
+  {
+    "id": "oldgames-2096",
+    "system": "snes",
+    "title": "Mask, The",
+    "cover": "https://r2.oldgames.app/snes/mask-the/images/snes_mask,_the_1.gif",
+    "source_url": "https://oldgames.app/games/snes/mask-the-2096",
+    "player_url": "https://oldgames.app/emulator?id=aHR0cHM6Ly9yMi5vbGRnYW1lcy5hcHAvc25lcy9tYXNrLXRoZS9tYXNrLXRoZS56aXA%3D&console=snes&emulatorJsCore=snes&v=1.0.0"
+  },
+  {
+    "id": "oldgames-1523",
+    "system": "snes",
+    "title": "Desert Strike - Return to the Gulf",
+    "cover": "https://r2.oldgames.app/snes/desert-strike-return-to-the-gulf/images/snes_desert_strike_-_return_to_the_gulf_1.gif",
+    "source_url": "https://oldgames.app/games/snes/desert-strike-return-to-the-gulf-1523",
+    "player_url": "https://oldgames.app/emulator?id=aHR0cHM6Ly9yMi5vbGRnYW1lcy5hcHAvc25lcy9kZXNlcnQtc3RyaWtlLXJldHVybi10by10aGUtZ3VsZi9kZXNlcnQtc3RyaWtlLXJldHVybi10by10aGUtZ3VsZi56aXA%3D&console=snes&emulatorJsCore=snes&v=1.0.0"
+  },
+  {
+    "id": "oldgames-1380",
+    "system": "snes",
+    "title": "Bobby's World",
+    "cover": "https://r2.oldgames.app/snes/bobbys-world/images/snes_bobbys_world_1.gif",
+    "source_url": "https://oldgames.app/games/snes/bobbys-world-1380",
+    "player_url": "https://oldgames.app/emulator?id=aHR0cHM6Ly9yMi5vbGRnYW1lcy5hcHAvc25lcy9ib2JieXMtd29ybGQvYm9iYnlzLXdvcmxkLnppcA%3D%3D&console=snes&emulatorJsCore=snes&v=1.0.0"
+  },
+  {
+    "id": "oldgames-1345",
+    "system": "snes",
+    "title": "Battletoads in Battlemaniacs",
+    "cover": "https://r2.oldgames.app/snes/battletoads-in-battlemaniacs/images/snes_battletoads_in_battlemaniacs_1.gif",
+    "source_url": "https://oldgames.app/games/snes/battletoads-in-battlemaniacs-1345",
+    "player_url": "https://oldgames.app/emulator?id=aHR0cHM6Ly9yMi5vbGRnYW1lcy5hcHAvc25lcy9iYXR0bGV0b2Fkcy1pbi1iYXR0bGVtYW5pYWNzL2JhdHRsZXRvYWRzLWluLWJhdHRsZW1hbmlhY3Muemlw&console=snes&emulatorJsCore=snes&v=1.0.0"
+  },
+  {
+    "id": "oldgames-2614",
+    "system": "snes",
+    "title": "Sunset Riders",
+    "cover": "https://r2.oldgames.app/snes/sunset-riders/images/snes_sunset_riders_1.gif",
+    "source_url": "https://oldgames.app/games/snes/sunset-riders-2614",
+    "player_url": "https://oldgames.app/emulator?id=aHR0cHM6Ly9yMi5vbGRnYW1lcy5hcHAvc25lcy9zdW5zZXQtcmlkZXJzL3N1bnNldC1yaWRlcnMuemlw&console=snes&emulatorJsCore=snes&v=1.0.0"
+  },
+  {
+    "id": "oldgames-9704",
     "system": "psx",
-    "title": "Tetrade",
-    "author": "Logan Campbell",
-    "year": 2025,
-    "license": "MIT",
-    "license_url": "/arcade/licenses/tetrade.txt",
-    "source_url": "https://github.com/Logan-Campbell/Tetrade",
-    "rom": "/arcade/roms/psx/tetrade.disc",
-    "cover": "/arcade/covers/tetrade.png"
+    "title": "Tomb Raider 2",
+    "cover": "https://r2.oldgames.app/ps1/tomb-raider-2/images/Tomb%20Raider%202%20cover.png",
+    "source_url": "https://oldgames.app/games/ps1/tomb-raider-2-ps1-9704",
+    "player_url": "https://oldgames.app/emulator?id=aHR0cHM6Ly9yMi5vbGRnYW1lcy5hcHAvcHMxL3RvbWItcmFpZGVyLTIvVE9NQlJBSURFUi0yLjd6&console=ps1&emulatorJsCore=psx&v=1.0.0"
+  },
+  {
+    "id": "oldgames-9616",
+    "system": "psx",
+    "title": "Resident Evil",
+    "cover": "https://r2.oldgames.app/ps1/resident-evil/images/Resident%20Evil%20cover.png",
+    "source_url": "https://oldgames.app/games/ps1/resident-evil-ps1-9616",
+    "player_url": "https://oldgames.app/emulator?id=aHR0cHM6Ly9yMi5vbGRnYW1lcy5hcHAvcHMxL3Jlc2lkZW50LWV2aWwvcmVzaWRlbnQtZXZpbC5wYnA%3D&console=ps1&emulatorJsCore=psx&v=1.0.0"
+  },
+  {
+    "id": "oldgames-9716",
+    "system": "psx",
+    "title": "Twisted Metal 2",
+    "cover": "https://r2.oldgames.app/ps1/twisted-metal-2/images/Twisted%20Metal%202%20cover.jpg",
+    "source_url": "https://oldgames.app/games/ps1/twisted-metal-2-ps1-9716",
+    "player_url": "https://oldgames.app/emulator?id=aHR0cHM6Ly9yMi5vbGRnYW1lcy5hcHAvcHMxL3R3aXN0ZWQtbWV0YWwtMi90bTIuN3o%3D&console=ps1&emulatorJsCore=psx&v=1.0.0"
+  },
+  {
+    "id": "oldgames-9013",
+    "system": "psx",
+    "title": "Crash Bandicoot",
+    "cover": "https://r2.oldgames.app/ps1/crash-bandicoot/images/Crash%20Bandicoot%20cover.png",
+    "source_url": "https://oldgames.app/games/ps1/crash-bandicoot-ps1-9013",
+    "player_url": "https://oldgames.app/emulator?id=aHR0cHM6Ly9yMi5vbGRnYW1lcy5hcHAvcHMxL2NyYXNoLWJhbmRpY29vdC9jcmFzaC1iYW5kaS43eg%3D%3D&console=ps1&emulatorJsCore=psx&v=1.0.0"
+  },
+  {
+    "id": "oldgames-9359",
+    "system": "psx",
+    "title": "Mega Man X4",
+    "cover": "https://r2.oldgames.app/ps1/mega-man-x4/images/Mega%20Man%20X4%20cover.png",
+    "source_url": "https://oldgames.app/games/ps1/mega-man-x4-ps1-9359",
+    "player_url": "https://oldgames.app/emulator?id=aHR0cHM6Ly9yMi5vbGRnYW1lcy5hcHAvcHMxL21lZ2EtbWFuLXg0L21lZ2FtYW4teDQucGJw&console=ps1&emulatorJsCore=psx&v=1.0.0"
+  },
+  {
+    "id": "oldgames-9682",
+    "system": "psx",
+    "title": "The King of Fighters '98",
+    "cover": "https://r2.oldgames.app/ps1/the-king-of-fighters-98/images/The%20King%20of%20Fighters%2098%20cover.jpg",
+    "source_url": "https://oldgames.app/games/ps1/the-king-of-fighters-98-ps1-9682",
+    "player_url": "https://oldgames.app/emulator?id=aHR0cHM6Ly9yMi5vbGRnYW1lcy5hcHAvcHMxL3RoZS1raW5nLW9mLWZpZ2h0ZXJzLTk4L2tvZjk4Ljd6&console=ps1&emulatorJsCore=psx&v=1.0.0"
+  },
+  {
+    "id": "oldgames-9535",
+    "system": "psx",
+    "title": "Road Rash Jailbreak",
+    "cover": "https://r2.oldgames.app/ps1/road-rash-jailbreak/images/Road%20Rash%20Jailbreak%20cover.jpg",
+    "source_url": "https://oldgames.app/games/ps1/road-rash-jailbreak-ps1-9535",
+    "player_url": "https://oldgames.app/emulator?id=aHR0cHM6Ly9yMi5vbGRnYW1lcy5hcHAvcHMxL3JvYWQtcmFzaC1qYWlsYnJlYWsvUm9hZC1SYXNoLUphaWxicmVhay5wYnA%3D&console=ps1&emulatorJsCore=psx&v=1.0.0"
+  },
+  {
+    "id": "oldgames-9352",
+    "system": "psx",
+    "title": "Medal of Honor (USA)",
+    "cover": "https://r2.oldgames.app/ps1/medal-of-honor-usa/images/Medal%20of%20Honor%20USA%20cover.png",
+    "source_url": "https://oldgames.app/games/ps1/medal-of-honor-usa-ps1-9352",
+    "player_url": "https://oldgames.app/emulator?id=aHR0cHM6Ly9yMi5vbGRnYW1lcy5hcHAvcHMxL21lZGFsLW9mLWhvbm9yLXVzYS9tZWRhbC1vZi1ob25vci11c2EuY2hk&console=ps1&emulatorJsCore=psx&v=1.0.0"
   }
 ]
